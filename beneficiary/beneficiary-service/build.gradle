@@ -3,6 +3,6 @@ apply from: "${rootDir}/gradle/service-discovery.gradle"
 apply from: "${rootDir}/gradle/service-monitoring.gradle"
 
 dependencies {
-    compile project (":person:person-core")
+    compile project (":beneficiary:beneficiary-core")
     runtime (database.postgre) {}
 }

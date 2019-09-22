@@ -1,5 +1,6 @@
 
 subprojects {
+    version = parent.version
 
     apply from: "${rootDir}/gradle/libraries.gradle"
     apply from: "${rootDir}/gradle/repositories.gradle"
@@ -11,7 +12,7 @@ subprojects {
     //apply from: "${rootDir}/gradle/code-quality.gradle"
     task printDependenciesTree(type: DependencyReportTask) {}
 
-    group 'com.felipesilvino.version.per.subject.person'
+    group 'com.felipesilvino.version-per-subproject.person'
 }
 
 tag {
