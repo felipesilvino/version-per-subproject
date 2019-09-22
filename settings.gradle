@@ -1,0 +1,8 @@
+rootProject.name = "version-per-subproject"
+
+apply from: "${rootDir}/gradle/versioning.gradle"
+
+include ":person:person-service"
+include ":person:person-core"
+include ":beneficiary:beneficiary-service"
+include ":beneficiary:beneficiary-core"
