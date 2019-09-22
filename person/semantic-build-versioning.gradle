@@ -1,3 +1,11 @@
 startingVersion = '1.0.0'
 tagPrefix = 'person@'
 tagPattern = ~/^person@/
+
+autobump {
+    majorPattern = ~/(?m)^breaking-change\(*[A-Za-z0-9_].*\): /
+    minorPattern = ~/(?m)^feat\(*[A-Za-z0-9_].*\): /
+    patchPattern = ~/(?m)^fix\(*[A-Za-z0-9_].*\): /
+    newPreReleasePattern = ~/(?m)^pre-release\(*[A-Za-z0-9_].*\): /
+    promoteToReleasePattern = ~/(?m)^promote\(*[A-Za-z0-9_].*\): /
+}
